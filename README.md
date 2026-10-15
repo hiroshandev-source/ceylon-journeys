@@ -113,3 +113,35 @@ EmailJS සකසන තුරු ද form එක ක්‍රියා කර�
 
 ### 5. ඡායාරූප
 ඡායාරූප `public/images/` ෆෝල්ඩරයේ ඇත. ඔබේම ඡායාරූප යෙදීමට, එම නමින්ම ගොනුව ප්‍රතිස්ථාපනය කරන්න.
+
+### 6. Google search (SEO) සහ deploy කිරීම
+
+Site URL: **https://ceylonjourneys.world**
+
+දැනටමත් project එකට එක් කර ඇති දේ:
+- `public/robots.txt`: Google එකට site එක crawl කිරීමට ඉඩ දෙයි, sitemap එක පෙන්වයි.
+- `public/sitemap.xml`: site එකේ pages ලැයිස්තුව. අලුත් pages එකතු කළොත්, ඒ එක එකට `<url>` block එකක් එකතු කර `<lastmod>` දිනය update කරන්න.
+- `index.html`: `canonical` link එක සහ full URL සහිත Open Graph tags. මේ නිසා Facebook සහ WhatsApp share කරන විට image එක නිවැරදිව පෙන්වයි.
+
+**Deploy කරන්න:**
+```powershell
+git add .
+git commit -m "Add robots.txt, sitemap.xml, canonical and OG tags"
+git push
+```
+
+Deploy වුණාට පස්සේ මේ දෙක browser එකේ open වෙනවාද බලන්න:
+- https://ceylonjourneys.world/robots.txt
+- https://ceylonjourneys.world/sitemap.xml
+
+**Sitemap submit කර indexing request කරන්න (Google Search Console):**
+1. Search Console → **Sitemaps** → `sitemap.xml` type කර **Submit** ඔබන්න.
+2. උඩ search bar එකේ `https://ceylonjourneys.world/` paste කර **Request indexing** click කරන්න.
+
+**Index වෙලාද check කරන්න.** Google එකේ මේක search කරන්න:
+```
+site:ceylonjourneys.world
+```
+අලුත් site එකකට සාමාන්‍යයෙන් දවස් කිහිපයක සිට සති 1–2 ක් යනවා.
+
+**Facebook share preview එක check කරන්න:** https://developers.facebook.com/tools/debug/ හි site URL එක දමා **Scrape Again** ඔබන්න.
