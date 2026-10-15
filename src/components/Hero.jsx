@@ -22,7 +22,7 @@ export default function Hero({ onEnquire }) {
       <div className="hero-overlay" />
 
       <div className="container hero-content">
-        <span className="eyebrow light"><Icon name="pin" size={14} /> {slide.place}</span>
+        <span key={slide.place} className="eyebrow light"><Icon name="pin" size={14} /> {slide.place}</span>
         <h1 key={slide.title} className="hero-title">{slide.title}</h1>
         <p key={slide.text} className="hero-text">{slide.text}</p>
         <div className="hero-ctas">
@@ -54,7 +54,7 @@ export default function Hero({ onEnquire }) {
       <div className="stats container">
         {stats.map((s) => (
           <div key={s.label} className="stat">
-            <strong>{s.value}</strong>
+            <strong className="notranslate" translate="no">{s.value}</strong>
             <span>{s.label}</span>
           </div>
         ))}

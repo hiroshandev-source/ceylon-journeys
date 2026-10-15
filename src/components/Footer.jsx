@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <img src="/logo-white.png" alt={`${BUSINESS.name} logo`} />
-          <p>Private, tailor-made Sri Lanka tours with English &amp; Sinhala speaking chauffeur guides. {BUSINESS.tagline}.</p>
+          <p>Private, tailor-made Sri Lanka tours with English-speaking chauffeur guides. {BUSINESS.tagline}.</p>
           <div className="socials">
             {Object.entries(BUSINESS.social).map(([k, href]) => (
               <a key={k} href={href} aria-label={k} target="_blank" rel="noreferrer"><Icon name={k} size={18} /></a>

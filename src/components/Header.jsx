@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Icon from './Icon'
+import LanguageSwitcher from './LanguageSwitcher'
 import { BUSINESS } from '../config'
 
 const links = [
@@ -37,7 +38,8 @@ export default function Header() {
             <a href={`mailto:${BUSINESS.email}`} className="hide-md"><Icon name="mail" size={14} /> {BUSINESS.email}</a>
           </div>
           <div className="topbar-right">
-            <span className="hide-sm"><Icon name="globe" size={14} /> English speaking guides</span>
+            <span className="hide-md">English-speaking guides</span>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

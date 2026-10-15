@@ -143,7 +143,7 @@ export const tours = [
   {
     id: 'classic', title: 'Classic Sri Lanka Grand Tour', days: 10, image: img('sigiriya'), tag: 'Best Seller',
     route: ['Negombo', 'Sigiriya', 'Dambulla', 'Kandy', 'Nuwara Eliya', 'Ella', 'Yala', 'Galle'],
-    includes: ['Private A/C vehicle', 'English/Sinhala speaking chauffeur guide', 'Hotels with breakfast', 'Airport transfers'],
+    includes: ['Private A/C vehicle', 'English-speaking chauffeur guide', 'Hotels with breakfast', 'Airport transfers'],
   },
   {
     id: 'culture', title: 'Cultural Triangle Explorer', days: 5, image: img('anuradhapura'), tag: 'Heritage',
@@ -184,7 +184,7 @@ export const experiences = [
 ]
 
 export const whyUs = [
-  { icon: 'chat', title: 'English & Sinhala Guides', text: 'Friendly, licensed chauffeur guides who speak English and Sinhala.' },
+  { icon: 'chat', title: 'Expert Local Guides', text: 'Friendly, licensed, English-speaking chauffeur guides who know every corner of the island.' },
   { icon: 'route', title: 'Tailor-made Itineraries', text: 'Every tour is designed around your interests, dates and budget.' },
   { icon: 'car', title: 'Private A/C Vehicles', text: 'Clean, comfortable cars, vans and coaches for any group size.' },
   { icon: 'shield', title: 'Safe & Trusted', text: 'Local experts who know the island – your trusted travel partner.' },
@@ -212,47 +212,47 @@ export const gallery = [
   { image: img('horton'), caption: 'Horton Plains National Park' },
 ]
 
-// Travel guidance shown in both English and Sinhala
+// Travel guidance tips
 export const tips = [
   {
     icon: 'sun',
-    en: { title: 'Best Time to Visit', text: 'West & south coasts and the hill country: December – April. East coast: May – September. Sri Lanka is a year-round destination.' },
-    si: { title: 'සංචාරයට හොඳම කාලය', text: 'බටහිර හා දකුණු වෙරළ තීරය සහ කඳුකරය: දෙසැම්බර් – අප්‍රේල්. නැගෙනහිර වෙරළ: මැයි – සැප්තැම්බර්. ශ්‍රී ලංකාව වසර පුරාම සංචාරය කළ හැකි රටකි.' },
+    title: 'Best Time to Visit',
+    text: 'West & south coasts and the hill country: December – April. East coast: May – September. Sri Lanka is a year-round destination.',
   },
   {
     icon: 'passport',
-    en: { title: 'Visa / ETA', text: 'Most visitors need an Electronic Travel Authorization (ETA) before arrival. Apply online through the official Sri Lanka ETA website.' },
-    si: { title: 'වීසා / ETA', text: 'බොහෝ විදේශ සංචාරකයින්ට පැමිණීමට පෙර විද්‍යුත් සංචාර අවසරයක් (ETA) අවශ්‍ය වේ. නිල ශ්‍රී ලංකා ETA වෙබ් අඩවිය හරහා මාර්ගගතව අයදුම් කරන්න.' },
+    title: 'Visa / ETA',
+    text: 'Most visitors need an Electronic Travel Authorization (ETA) before arrival. Apply online through the official Sri Lanka ETA website.',
   },
   {
     icon: 'temple',
-    en: { title: 'Temple Etiquette', text: 'Cover shoulders and knees, remove shoes and hats, and never pose for photos with your back to a Buddha statue.' },
-    si: { title: 'විහාරස්ථාන ආචාර ධර්ම', text: 'උරහිස් සහ දණහිස් ආවරණය වන සේ ඇඳුම් අඳින්න, පාවහන් සහ තොප්පි ඉවත් කරන්න. බුද්ධ ප්‍රතිමාවකට පිටුපාමින් ඡායාරූප නොගන්න.' },
+    title: 'Temple Etiquette',
+    text: 'Cover shoulders and knees, remove shoes and hats, and never pose for photos with your back to a Buddha statue.',
   },
   {
     icon: 'cash',
-    en: { title: 'Money & Currency', text: 'The currency is the Sri Lankan Rupee (LKR). Cards work in hotels and larger shops; carry cash for markets and tuk-tuks.' },
-    si: { title: 'මුදල්', text: 'ශ්‍රී ලංකා රුපියල (LKR) භාවිත වේ. හෝටල් සහ විශාල වෙළඳසැල්වල කාඩ්පත් භාවිත කළ හැකි අතර, වෙළඳපොළ සහ ත්‍රීරෝද රථ සඳහා මුදල් රැගෙන යන්න.' },
+    title: 'Money & Currency',
+    text: 'The currency is the Sri Lankan Rupee (LKR). Cards work in hotels and larger shops; carry cash for markets and tuk-tuks.',
   },
   {
     icon: 'heart',
-    en: { title: 'Health & Packing', text: 'Drink bottled water, use sunscreen and insect repellent. Pack light cotton clothes plus a warm layer for the hills.' },
-    si: { title: 'සෞඛ්‍යය සහ ඇඳුම්', text: 'බෝතල් කළ ජලය පානය කරන්න, හිරු ආරක්ෂක ක්‍රීම් සහ කෘමි විකර්ෂක භාවිත කරන්න. සැහැල්ලු කපු ඇඳුම් සමඟ කඳුකරය සඳහා උණුසුම් ඇඳුමක්ද රැගෙන එන්න.' },
+    title: 'Health & Packing',
+    text: 'Drink bottled water, use sunscreen and insect repellent. Pack light cotton clothes plus a warm layer for the hills.',
   },
   {
     icon: 'car',
-    en: { title: 'Getting Around', text: 'Travel in comfort with our private air-conditioned vehicles and experienced chauffeur guides who speak English and Sinhala.' },
-    si: { title: 'ගමන් බිමන්', text: 'ඉංග්‍රීසි සහ සිංහල භාෂා කතා කරන පළපුරුදු රියදුරු මාර්ගෝපදේශකයින් සමඟ අපගේ පුද්ගලික වායුසමීකරණ වාහනවලින් සුවපහසුව ගමන් කරන්න.' },
+    title: 'Getting Around',
+    text: 'Travel in comfort with our private air-conditioned vehicles and experienced English-speaking chauffeur guides.',
   },
   {
     icon: 'food',
-    en: { title: 'Local Food', text: 'Don’t miss rice & curry, hoppers, kottu roti, fresh tropical fruit and a refreshing king coconut.' },
-    si: { title: 'දේශීය ආහාර', text: 'බත් සහ ව්‍යංජන, ආප්ප, කොත්තු, නැවුම් නිවර්තන පලතුරු සහ තැඹිලි රස බැලීමට අමතක නොකරන්න.' },
+    title: 'Local Food',
+    text: 'Don’t miss rice & curry, hoppers, kottu roti, fresh tropical fruit and a refreshing king coconut.',
   },
   {
     icon: 'phone',
-    en: { title: 'Emergency Numbers', text: 'Police emergency: 119 · Tourist hotline: 1912 · Ceylon Journeys: +94 71 348 0470 (24/7).' },
-    si: { title: 'හදිසි දුරකථන අංක', text: 'පොලිස් හදිසි ඇමතුම: 119 · සංචාරක උපකාරක අංකය: 1912 · Ceylon Journeys: +94 71 348 0470 (පැය 24 පුරා).' },
+    title: 'Emergency Numbers',
+    text: 'Police emergency: 119 · Tourist hotline: 1912 · Ceylon Journeys: +94 71 348 0470 (24/7).',
   },
 ]
 

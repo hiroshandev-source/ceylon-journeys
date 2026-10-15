@@ -54,7 +54,7 @@ export function About() {
           <p>
             At <strong>{BUSINESS.name}</strong>, we are a local travel company based in Panadura. We design
             private, tailor-made tours with comfortable vehicles and friendly chauffeur guides who speak
-            <strong> English and Sinhala</strong>, so you can relax and simply enjoy the journey.
+            <strong> English</strong>, so you can relax and simply enjoy the journey.
           </p>
           <ul className="check-list">
             <li><Icon name="check" size={18} /> Private tours designed around you</li>
@@ -230,10 +230,10 @@ export function Guide() {
           text="Read our travel guidance before you arrive in Sri Lanka." />
         <div className="tips-grid">
           {tips.map((t) => (
-            <div key={t.en.title} className="tip-card reveal">
+            <div key={t.title} className="tip-card reveal">
               <span className="tip-icon"><Icon name={t.icon} size={24} /></span>
-              <h3>{t.en.title}</h3>
-              <p>{t.en.text}</p>
+              <h3>{t.title}</h3>
+              <p>{t.text}</p>
             </div>
           ))}
         </div>

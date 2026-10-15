@@ -9,7 +9,7 @@ export const BUSINESS = {
   // Owner contact numbers (international format, no spaces)
   phones: ['+94713480470', '+94783480470'],
   // WhatsApp number that receives inquiries (digits only, with country code)
-  whatsapp: '94713480470',
+  whatsapp: '94783480470',
   // Number that receives the SMS copy of each inquiry
   smsNumber: '+94783480470',
   // ⚠️ Change to the owner's real email address

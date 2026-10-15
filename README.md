@@ -25,7 +25,7 @@ Edit **`src/config.js`**: phone numbers, WhatsApp number, **owner email**, addre
 
 ### 3. How the inquiry form works
 When a visitor fills **Full Name, Email, Phone and Destination** and clicks **Send Inquiry**:
-1. **WhatsApp** opens with all the details, addressed to the owner (+94 71 348 0470). The visitor taps *Send*.
+1. **WhatsApp** opens with all the details, addressed to the owner (+94 78 348 0470). The visitor taps *Send*.
 2. **Email** goes to the owner, and a confirmation copy goes to the customer (via EmailJS, set up below).
 3. A success popup shows buttons to **send by SMS** to +94 78 348 0470, resend by WhatsApp, or send by email.
 
@@ -94,7 +94,7 @@ npm run build
 
 ### 3. Inquiry form එක ක්‍රියා කරන ආකාරය
 පාරිභෝගිකයා **නම, Email, දුරකථන අංකය සහ ගමනාන්තය** පුරවා **Send Inquiry** ඔබූ විට:
-1. සියලු විස්තර සහිතව හිමිකරුගේ අංකයට (+94 71 348 0470) **WhatsApp** විවෘත වේ. පාරිභෝගිකයා *Send* ඔබයි.
+1. සියලු විස්තර සහිතව හිමිකරුගේ අංකයට (+94 78 348 0470) **WhatsApp** විවෘත වේ. පාරිභෝගිකයා *Send* ඔබයි.
 2. හිමිකරුට **Email** එකක් ද, පාරිභෝගිකයාට තහවුරු කිරීමේ email එකක් ද යැවේ (EmailJS හරහා).
 3. ඉන්පසු +94 78 348 0470 අංකයට **SMS** ලෙස යැවීමට බොත්තමක් පෙන්වයි.
 
